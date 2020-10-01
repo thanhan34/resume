@@ -1,0 +1,35 @@
+.skillcard {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  flex: 0 47%;
+  box-sizing: border-box;
+}
+
+.skillcard__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.skillcard__body {
+  margin-left: 15px;
+}
+.skillcard__content {
+  margin: 0;
+  font-size: 1rem;
+  color: #6e7e91;
+}
+.skillcard__title {
+}
+@media (max-width: 1080px) {
+  .skillcard {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    flex: 0 90%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,31 @@
+.about {
+  padding: 20px;
+  margin: -35px;
+  border-radius: 30px;
+}
+.about__intro {
+  font-size: 0.9rem;
+  padding: 20px;
+  margin: 10px 0;
+}
+.about__container {
+  background-color: #dbdddf;
+  padding: 30px 20px;
+  border-color: red;
+}
+.about__heading {
+  font-size: 25px;
+  font-weight: 700;
+  color: #354358;
+  margin-left: 10px;
+}
+.aboutRow_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1080px) {
+  .aboutRow_container {
+    display: flex;
+    flex-direction: column;
+  }
+}

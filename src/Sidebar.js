@@ -6,6 +6,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import WorkIcon from '@material-ui/icons/Work';
 import resume from './assests/resume.pdf';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function Sidebar() {
     const handleEmailMe = () => {
@@ -30,6 +31,9 @@ function Sidebar() {
                 </a>
                 <a href="">
                     <InstagramIcon className="sidebar__icon" />
+                </a>
+                <a href="">
+                    <LinkedInIcon className="sidebar__icon" />
                 </a>
             </figure>
             <div className="sidebar__contact">
