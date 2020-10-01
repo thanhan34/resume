@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
           <div className="app__sidebar">
             <Sidebar />
           </div>
-          <div className="app__main">My main content</div>
+          <div className="app__main">
+            <Navbar />
+          </div>
         </div>
       </div>
 
