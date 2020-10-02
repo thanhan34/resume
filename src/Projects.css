@@ -3,6 +3,9 @@
   padding-top: 30px;
   overflow-y: auto;
 }
+.projects::-webkit-scrollbar {
+  display: none;
+}
 .projects__navbar {
   display: flex;
   margin-bottom: 5px;
@@ -15,4 +18,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+.projects__navbar-active {
+  color: #f37335;
 }

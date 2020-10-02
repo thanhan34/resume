@@ -50,11 +50,9 @@ a:hover {
   border-radius: 30px;
 }
 .sidebar__contact {
-  background-color: #dbdddf;
   padding: 2px 0;
   border-radius: 30px;
   margin: 20px -2px;
-  /* margin: 20px -15px; */
 }
 .sidebar__email {
   background-image: linear-gradient(to right, #fdc830, #f37335);
@@ -71,11 +69,12 @@ a:hover {
 .sidebar__resume:hover {
   background-color: #f1f1f2;
   color: #000;
+  padding-top: 10px;
 }
 .sidebar__socialicon {
-  background-color: #dbdddf;
+  /* background-color: #dbdddf; */
   border-radius: 30px;
-  padding: 2px;
+  padding: 15px;
 }
 .sidebarSocialIcon__fb {
   padding: 3px;

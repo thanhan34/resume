@@ -2,14 +2,23 @@ import React, { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard'
 import './Projects.css'
 import db from './firebase'
+import { motion } from 'framer-motion'
 
 
 function Projects() {
     const [projects, setProjects] = useState([])
+    const [active, setActive] = useState('All')
+    const [copyProjects, setCopyProjects] = useState([])
     useEffect(() => {
         let unsubscribe = db.collection("projects")
             .onSnapshot((snapshot) => {
                 setProjects(
+                    snapshot.docs.map((doc) => ({
+                        id: doc.id,
+                        project: doc.data(),
+                    }))
+                );
+                setCopyProjects(
                     snapshot.docs.map((doc) => ({
                         id: doc.id,
                         project: doc.data(),
@@ -20,20 +29,42 @@ function Projects() {
             unsubscribe();
         }
     }, [])
-    console.log(projects)
-    // const [projects, setProjects] = useState(dataProjects)
+
+
     const handleFilterCategory = (name) => {
-        const new_array = projects.filter(project => project.project.category?.includes(name))
+        console.log(active)
+        const new_array = copyProjects.filter(project => project.project.category?.includes(name))
         setProjects(new_array)
+        setActive(name)
+
+    }
+    const project_variants = {
+        hidden: {
+            opacity: 0
+
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.2, duration: 0.6
+            }
+        }
     }
     return (
-        <div className="projects">
+        <motion.div className="projects"
+            variants={project_variants}
+            initial="hidden"
+            animate="visible"
+        >
             <div className="projects__navbar">
-                <div onClick={() => setProjects(projects)}>All</div>
-                <div onClick={() => handleFilterCategory('react.js')}>React</div>
-                <div onClick={() => handleFilterCategory('mongoDB')}>MongoDB</div>
-                <div onClick={() => handleFilterCategory('node.js')}>Node</div>
-                <div onClick={() => handleFilterCategory('vanilla')}>Vanilla</div>
+                <div className={active === 'All' && 'projects__navbar-active'} onClick={() => {
+                    setProjects(copyProjects)
+                    setActive("All")
+                }}>All</div>
+                <div className={active === 'react.js' && 'projects__navbar-active'} onClick={() => handleFilterCategory('react.js')}>React</div>
+                <div className={active === 'mongoDB' && 'projects__navbar-active'} onClick={() => handleFilterCategory('mongoDB')}>MongoDB</div>
+                <div className={active === 'node.js' && 'projects__navbar-active'} onClick={() => handleFilterCategory('node.js')}>Node</div>
+                <div className={active === 'vanilla' && 'projects__navbar-active'} onClick={() => handleFilterCategory('vanilla')}>Vanilla</div>
             </div>
             <div className="row">
 
@@ -49,7 +80,7 @@ function Projects() {
                     ))
                 }
             </div>
-        </div>
+        </motion.div>
     )
 }
 

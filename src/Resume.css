@@ -6,6 +6,7 @@
 }
 .resume__background {
   display: flex;
+  flex-direction: column;
 }
 .resume__skills {
   padding-top: 25px;

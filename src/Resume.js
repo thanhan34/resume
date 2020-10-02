@@ -3,6 +3,7 @@ import './Resume.css'
 import react from './assests/icons/react.svg'
 import python from './assests/icons/python.svg'
 import Bar from './Bar';
+import { motion } from 'framer-motion'
 
 const languages = [
     {
@@ -62,8 +63,26 @@ const tools = [
 ]
 
 function Resume() {
+    const resume_variants = {
+        hidden: {
+            opacity: 0
+
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.2, duration: 0.6
+            }
+        }
+    }
     return (
-        <div className="resume">
+
+
+        <motion.div className="resume"
+            variants={resume_variants}
+            initial="hidden"
+            animate="visible"
+        >
             <div className="resume__background">
                 <div className="resumeCard" >
                     <h4 className="resumeCard__heading">
@@ -71,12 +90,37 @@ function Resume() {
                     </h4>
                     <div className="resumeCard__body">
                         <h5 className="resumeCard__title">
-                            Computer Science Enginnering
+                            Master of Computer Science
                         </h5>
                         <p className="resumeCard__name">
-                            Academy of Technology(2017-2021)
+                            Queensland University of Technology ( 2015-2017)
+                            <li>Advanced Information Storage and Retrieval</li>
+                            <li>Advanced Topics in Artificial Intelligence</li>
+                            <li>Mobile and Pervasive Systems</li>
+                            <li>Data Mining Technology and Applications</li>
+                            <li>Programming Language Theory</li>
+                            <li>Analysis of Programs</li>
+                            <li>Project Management</li>
+                            <li>Advanced Network Engineering</li>
                         </p>
-                        <p className="resumeCard__details">I am currently persuing B.tech in Computer Science Engineering from Academy of Technology</p>
+
+                    </div>
+                    <div className="resumeCard__body">
+                        <h5 className="resumeCard__title">
+                            IELTS English Course
+                        </h5>
+                        <p className="resumeCard__name">
+                            Australian Center for Education and Training – ACET(2013-2014)
+                        </p>
+
+                    </div>
+                    <div className="resumeCard__body">
+                        <h5 className="resumeCard__title">
+                            Information and Communication Technology
+                        </h5>
+                        <p className="resumeCard__name">
+                            Cantho University(2008-2012)
+                        </p>
                     </div>
                 </div>
                 <div className="resumeCard" >
@@ -88,9 +132,18 @@ function Resume() {
                             Intern
                         </h5>
                         <p className="resumeCard__name">
-                            TCS (2020)
+                            SOL Edu Pty Ltd (2018)
+                            <li>Provided on-site IT support to staff for technical issues with printers, internet connectivity, computers, tablets and mobile phones.</li>
+                            <li>Using Wordpress to manage the content for 9 websites.</li>
+                            <li>Set up ICT services for meetings and training sessions.</li>
+                            <li>Assist company’s projects on a range of issues related to systems and infrastructure.</li>
+                            <li>Actively identify ICT service issues to be investigated and improved to ensure smooth and efficient work processes for staffs.</li>
+                            <li>Maintain MAC/Windows computers, printers (cartridges & drums) and network.</li>
+                            <li>Make a proposal to purchase IT equipment and assist the finance team in purchasing IT equipment.</li>
+                            <li>Prepare manuals instructions on ICT services for staffs.</li>
+                            <li>Perform other miscellaneous administrative tasks related to ICT services.</li>
+                            <li>Online marketing</li>
                         </p>
-                        <p className="resumeCard__details">I work as a intern in TCS and also completed some projects on testing</p>
                     </div>
                 </div>
             </div>
@@ -127,7 +180,7 @@ function Resume() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -7,6 +7,7 @@ import repair from './assests/icons/repair.svg'
 import puzzle from './assests/icons/puzzle.svg'
 import Skillcard from './Skillcard'
 import './About.css';
+import { motion } from 'framer-motion'
 
 const skills = [
     {
@@ -43,8 +44,24 @@ const skills = [
 
 
 const About = () => {
+    const about_variants = {
+        hidden: {
+            opacity: 0
+
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.2, duration: 0.6
+            }
+        }
+    }
     return (
-        <div className="about">
+        <motion.div className="about"
+            variants={about_variants}
+            initial="hidden"
+            animate="visible"
+        >
             <h6 className="about__intro">
                 Graduate master student with good knowledge of Computer Science and Software Engineering. Enthusiastic coder. Highly adaptable, quick learner and able to work under pressure. Ability to seek opportunities to participate, identify opportunities for continuous improvement. Ability to collaborate with development team to find the best solution to problems
             </h6>
@@ -62,7 +79,7 @@ const About = () => {
                     }
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
