@@ -84,7 +84,7 @@ function Resume() {
             animate="visible"
         >
             <div className="resume__background">
-                <div className="resumeCard" >
+                <div className="resumeCard__Education" >
                     <h4 className="resumeCard__heading">
                         Education
                     </h4>
@@ -105,25 +105,8 @@ function Resume() {
                         </p>
 
                     </div>
-                    <div className="resumeCard__body">
-                        <h5 className="resumeCard__title">
-                            IELTS English Course
-                        </h5>
-                        <p className="resumeCard__name">
-                            Australian Center for Education and Training – ACET(2013-2014)
-                        </p>
-
-                    </div>
-                    <div className="resumeCard__body">
-                        <h5 className="resumeCard__title">
-                            Information and Communication Technology
-                        </h5>
-                        <p className="resumeCard__name">
-                            Cantho University(2008-2012)
-                        </p>
-                    </div>
                 </div>
-                <div className="resumeCard" >
+                <div className="resumeCard__Experience" >
                     <h4 className="resumeCard__heading">
                         Experience
                     </h4>

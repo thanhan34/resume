@@ -4,7 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import WorkIcon from '@material-ui/icons/Work';
-import resume from './assests/resume.pdf';
+
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { motion } from 'framer-motion'
 function Sidebar() {
@@ -14,7 +14,6 @@ function Sidebar() {
     const sidebar_viriant = {
         hidden: {
             x: '-10vw',
-
         },
         visible: {
             x: 0,
@@ -35,7 +34,7 @@ function Sidebar() {
             />
             <div className="sidebar__name">An <span>Doan</span></div>
             <div className="sidebar__item sidebar__title">Web Developer</div>
-            <a href={resume} download="resume.pdf">
+            <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-1a7ec.appspot.com/o/resume.pdf?alt=media&token=8464950c-d669-4232-ac15-a470ad95fb74" download="resume.pdf">
                 <div className="sidebar__item sidebar__resume">
                     <WorkIcon className="sidebar__icon" download="resume.pdf" /> Download Resume
                 </div>
@@ -50,7 +49,7 @@ function Sidebar() {
             </figure>
             <div className="sidebar__contact">
                 <div className="sidebar__item sidebar__github">
-                    <a href="https://github.com/thanhan34"><GitHubIcon className="sidebar__icon" />Github</a>
+                    <a href="https://github.com/thanhan34"><GitHubIcon className="sidebar__icon" />   Github</a>
                 </div>
                 <div className="sidebar__item">dtan42@gmail.com</div>
                 <div className="sidebar__item">0450669092</div>

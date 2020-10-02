@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skillcard.css'
 
-function Skillcard({ icon, title, about, className }) {
+function Skillcard({ icon, title, about }) {
     return (
         <div className="skillcard">
             <img src={icon} alt="icon" className="skillcard__icon" />
