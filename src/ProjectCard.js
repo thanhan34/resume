@@ -1,6 +1,6 @@
 import React from 'react'
-import github from './assests/icons/github.svg'
 import './ProjectCard.css'
+import GitHubIcon from '@material-ui/icons/GitHub';
 function ProjectCard({ name, image, deployed_url, github_url }) {
     return (
         <div className="projectCard">
@@ -10,7 +10,7 @@ function ProjectCard({ name, image, deployed_url, github_url }) {
                 </a>
                 <div className="projectCard__title">
                     <a href={github_url} target="_blank">
-                        <img src={github} alt="github link" className="projectCard__icon" />
+                        <GitHubIcon className="projectCard__icon" />
                     </a>
                     {name}
                 </div>

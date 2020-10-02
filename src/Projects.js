@@ -79,7 +79,7 @@ function Projects() {
         setProjects(new_array)
     }
     return (
-        <div className="container projects">
+        <div className="projects">
             <div className="projects__navbar">
                 <div onClick={() => setProjects(dataProjects)}>All</div>
                 <div onClick={() => handleFilterCategory('react.js')}>React</div>
