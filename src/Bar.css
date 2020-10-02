@@ -15,3 +15,6 @@
   color: #fff;
   font-size: 0.9rem;
 }
+.bar__name > img {
+  margin-right: 10px;
+}

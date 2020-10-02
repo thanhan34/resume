@@ -1,30 +1,50 @@
-.row {
-  display: flex;
-  justify-content: space-evenly;
-  /* justify-content: space-between; */
-  padding: 20px;
-}
 .resume {
-  padding-top: 20px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.resume-card__heading,
+.resume__background {
+  display: flex;
+}
+.resume__skills {
+  display: flex;
+}
+.resume-languages__body {
+  margin-top: 3px;
+}
+.resumeCard__heading,
 .reume-language__heading {
   /* margin-left: 10px; */
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #354538;
-  padding: 10px;
+  color: #ff5500;
+  padding: 5px;
 }
-.resume-card__body {
+.resumeCard__body {
   margin-top: 10px;
 }
-.resume-card__title {
+.resumeCard__title {
   font-weight: 700;
+  margin-left: 5px;
 }
-.resume-card__name {
+.resumeCard__name {
   font-size: 16px;
+  margin-left: 5px;
 }
-.resume-card__details {
+.resumeCard__details {
   font-size: 0.9rem;
   padding-top: 5px;
+  margin-left: 5px;
+}
+.resumeLanguages {
+  flex: 1;
+}
+@media (max-width: 860px) {
+  .resume__background {
+    flex-direction: column;
+  }
+  .resume__skills {
+    flex-direction: column;
+  }
 }

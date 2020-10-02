@@ -63,44 +63,43 @@ const tools = [
 
 function Resume() {
     return (
-        <div className="container resume">
-            <div className="row">
-                <div className="resume-card" >
-                    <h4 className="resume-card__heading">
+        <div className="resume">
+            <div className="resume__background">
+                <div className="resumeCard" >
+                    <h4 className="resumeCard__heading">
                         Education
                     </h4>
-                    <div className="resume-card__body">
-                        <h5 className="resume-card__title">
+                    <div className="resumeCard__body">
+                        <h5 className="resumeCard__title">
                             Computer Science Enginnering
                         </h5>
-                        <p className="resume-card__name">
+                        <p className="resumeCard__name">
                             Academy of Technology(2017-2021)
                         </p>
-                        <p className="resume-card__details">I am currently persuing B.tech in Computer Science Engineering from Academy of Technology</p>
+                        <p className="resumeCard__details">I am currently persuing B.tech in Computer Science Engineering from Academy of Technology</p>
                     </div>
                 </div>
-                <div className="resume-card" >
-                    <h4 className="resume-card__heading">
+                <div className="resumeCard" >
+                    <h4 className="resumeCard__heading">
                         Experience
                     </h4>
-                    <div className="resume-card__body">
-                        <h5 className="resume-card__title">
+                    <div className="resumeCard__body">
+                        <h5 className="resumeCard__title">
                             Intern
                         </h5>
-                        <p className="resume-card__name">
+                        <p className="resumeCard__name">
                             TCS (2020)
                         </p>
-                        <p className="resume-card__details">I work as a intern in TCS and also completed some projects on testing</p>
+                        <p className="resumeCard__details">I work as a intern in TCS and also completed some projects on testing</p>
                     </div>
                 </div>
             </div>
-
-            <div className="row">
-                <div className="resume-languages">
+            <div className="resume__skills">
+                <div className="resumeLanguages">
                     <h5 className="reume-language__heading">
                         Language and Framework
                     </h5>
-                    <div className="resume-language__body mt-3">
+                    <div className="resume-language__body">
                         {
                             languages.map(language =>
                                 <Bar
@@ -112,7 +111,7 @@ function Resume() {
                         }
                     </div>
                 </div>
-                <div className="resume-languages">
+                <div className="resumeLanguages">
                     <h5 className="reume-language__heading">
                         Tools and Softwares
                     </h5>

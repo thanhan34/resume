@@ -8,7 +8,7 @@ function Bar({ icon, name, level }) {
                 'width': bar_width
             }}>
                 <span className="bar__name">
-                    <img src={icon} alt="icon" className="bar__icon mr-2" />{name}
+                    <img src={icon} alt="icon" className="bar__icon" />{name}
                 </span>
 
             </div>

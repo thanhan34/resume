@@ -29,3 +29,9 @@
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  .about__intro {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+}
