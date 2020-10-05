@@ -22,6 +22,9 @@ function Sidebar() {
             }
         }
     }
+
+
+
     return (
         <motion.div className="sidebar"
             variants={sidebar_viriant}

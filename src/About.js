@@ -50,7 +50,7 @@ const About = () => {
             animate="visible"
         >
             <h6 className="about__intro">
-                Graduate master student with good knowledge of Computer Science and Software Engineering. Enthusiastic coder. Highly adaptable, quick learner and able to work under pressure. Ability to seek opportunities to participate, identify opportunities for continuous improvement. Ability to collaborate with development team to find the best solution to problems
+                Graduate master student with good knowledge of  <strong>Computer Science and Software Engineering</strong>. Enthusiastic coder. Highly adaptable, quick learner and able to work under pressure. Ability to seek opportunities to participate, identify opportunities for continuous improvement. Ability to collaborate with development team to find the best solution to problems
             </h6>
             <div className="about__container">
                 <h6 className="about__heading">What I offer</h6>

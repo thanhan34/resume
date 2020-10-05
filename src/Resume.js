@@ -6,15 +6,11 @@ import Bar from './Bar';
 import { motion } from 'framer-motion'
 
 const languages = [
-    {
-        icon: python,
-        name: 'Python',
-        level: '45'
-    },
+
     {
         icon: react,
-        name: 'Java',
-        level: '60'
+        name: 'React JS',
+        level: '90'
     },
     {
         icon: react,
@@ -23,19 +19,20 @@ const languages = [
     },
     {
         icon: react,
-        name: 'react',
+        name: 'CSS',
         level: '60'
     },
     {
         icon: react,
-        name: 'Django',
+        name: 'Javascript',
         level: '80'
     },
     {
         icon: react,
-        name: 'Bootstrap',
-        level: '80'
+        name: 'Swift',
+        level: '60'
     }
+
 ]
 
 const tools = [

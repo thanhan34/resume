@@ -62,7 +62,7 @@ function Projects() {
                     setActive("All")
                 }}>All</div>
                 <div className={active === 'react.js' && 'projects__navbar-active'} onClick={() => handleFilterCategory('react.js')}>React</div>
-                <div className={active === 'mongoDB' && 'projects__navbar-active'} onClick={() => handleFilterCategory('mongoDB')}>MongoDB</div>
+                <div className={active === 'firebase' && 'projects__navbar-active'} onClick={() => handleFilterCategory('firebase')}>Firebase</div>
                 <div className={active === 'node.js' && 'projects__navbar-active'} onClick={() => handleFilterCategory('node.js')}>Node</div>
                 <div className={active === 'vanilla' && 'projects__navbar-active'} onClick={() => handleFilterCategory('vanilla')}>Vanilla</div>
             </div>
@@ -76,6 +76,7 @@ function Projects() {
                             image={project.project.image}
                             deployed_url={project.project.deployed_url}
                             github_url={project.project.github_url}
+                            description={project.project.description}
                         />
                     ))
                 }
