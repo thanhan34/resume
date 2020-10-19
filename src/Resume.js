@@ -1,63 +1,10 @@
 import React from 'react'
 import './Resume.css'
-import react from './assests/icons/react.svg'
-import python from './assests/icons/python.svg'
 import Bar from './Bar';
 import { motion } from 'framer-motion'
+import { tools, languages } from './data/resume_data'
 
-const languages = [
 
-    {
-        icon: react,
-        name: 'React JS',
-        level: '90'
-    },
-    {
-        icon: react,
-        name: 'HTML',
-        level: '80'
-    },
-    {
-        icon: react,
-        name: 'CSS',
-        level: '60'
-    },
-    {
-        icon: react,
-        name: 'Javascript',
-        level: '80'
-    },
-    {
-        icon: react,
-        name: 'Swift',
-        level: '60'
-    }
-
-]
-
-const tools = [
-    {
-        icon: react,
-        name: 'Figma',
-        level: '85'
-    },
-    {
-        icon: react,
-        name: 'Photoshop',
-        level: '45'
-    },
-    {
-        icon: react,
-        name: 'Illustrator',
-        level: '60'
-    },
-    {
-        icon: react,
-        name: 'Framer',
-        level: '45'
-    },
-
-]
 
 function Resume() {
     const resume_variants = {
@@ -90,15 +37,8 @@ function Resume() {
                             Master of Computer Science
                         </h5>
                         <p className="resumeCard__name">
-                            Queensland University of Technology ( 2015-2017)
-                            <li>Advanced Information Storage and Retrieval</li>
-                            <li>Advanced Topics in Artificial Intelligence</li>
-                            <li>Mobile and Pervasive Systems</li>
-                            <li>Data Mining Technology and Applications</li>
-                            <li>Programming Language Theory</li>
-                            <li>Analysis of Programs</li>
-                            <li>Project Management</li>
-                            <li>Advanced Network Engineering</li>
+                        Queensland University of Technology ( 2015-2017)
+                           
                         </p>
 
                     </div>
@@ -113,16 +53,7 @@ function Resume() {
                         </h5>
                         <p className="resumeCard__name">
                             SOL Edu Pty Ltd (2018)
-                            <li>Provided on-site IT support to staff for technical issues with printers, internet connectivity, computers, tablets and mobile phones.</li>
-                            <li>Using Wordpress to manage the content for 9 websites.</li>
-                            <li>Set up ICT services for meetings and training sessions.</li>
-                            <li>Assist company’s projects on a range of issues related to systems and infrastructure.</li>
-                            <li>Actively identify ICT service issues to be investigated and improved to ensure smooth and efficient work processes for staffs.</li>
-                            <li>Maintain MAC/Windows computers, printers (cartridges & drums) and network.</li>
-                            <li>Make a proposal to purchase IT equipment and assist the finance team in purchasing IT equipment.</li>
-                            <li>Prepare manuals instructions on ICT services for staffs.</li>
-                            <li>Perform other miscellaneous administrative tasks related to ICT services.</li>
-                            <li>Online marketing</li>
+                           
                         </p>
                     </div>
                 </div>

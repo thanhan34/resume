@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import api from './assests/icon/api.svg'
 import flowchart from './assests/icon/flow-chart.svg'
 import computer from './assests/icon/computer.svg'
@@ -8,8 +8,39 @@ import webdesign from './assests/icon/web-design.svg'
 import backend from './assests/icon/backend.svg'
 import './About.css';
 import { motion } from 'framer-motion'
-import db from './firebase'
 
+const skills = [
+    {
+        icon: computer,
+        title: "Frontend Development",
+        about: "I can build a beautiful and scalable SPA using HTML, CSS and React.js"
+    },
+    {
+        icon: backend,
+        title: "Backend  Development",
+        about: "handle database, server, api using and SQLlite",
+    },
+    {
+        icon: api,
+        title: "API Development",
+        about: "I can develop robust REST API using django-rest-api "
+    },
+    {
+        icon: flowchart,
+        title: "Competitive Coder",
+        about: "a daily problem solver in HackerRank and Leetcode"
+    },
+    {
+        icon: puzzle,
+        title: "UI/UX designer",
+        about: "minimalistic user interface designer using figma and  framer"
+    },
+    {
+        icon: webdesign,
+        title: "Whatever",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!"
+    },
+]
 
 
 
@@ -27,21 +58,8 @@ const About = () => {
         }
     }
 
-    const [skills, setSkills] = useState([])
-    useEffect(() => {
-        let unsubscribe = db.collection("skills")
-            .onSnapshot((snapshot) => {
-                setSkills(snapshot.docs.map((doc) => ({
-                    icon: doc.data().icon,
-                    title: doc.data().title,
-                    about: doc.data().about
-                }))
-                );
-            });
-        return () => {
-            unsubscribe();
-        }
-    }, [])
+
+
 
     return (
         <motion.div className="about"
