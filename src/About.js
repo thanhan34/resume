@@ -18,17 +18,17 @@ const skills = [
     {
         icon: backend,
         title: "Backend  Development",
-        about: "handle database, server, api using and SQLlite",
+        about: "Handle database, authentication, storage and hosting with Firebase",
     },
     {
         icon: api,
-        title: "API Development",
-        about: "I can develop robust REST API using django-rest-api "
+        title: "Mobile Development",
+        about: "Develop iOS mobile application with Swift"
     },
     {
         icon: flowchart,
         title: "Competitive Coder",
-        about: "a daily problem solver in HackerRank and Leetcode"
+        about: "Continuing learn and apply new technologies to solve business problems"
     },
     {
         icon: puzzle,
@@ -37,8 +37,8 @@ const skills = [
     },
     {
         icon: webdesign,
-        title: "Whatever",
-        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!"
+        title: "Future target",
+        about: "Develop cross-platform mobile application with React Native and Progressive Web apps"
     },
 ]
 

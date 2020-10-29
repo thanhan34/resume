@@ -9,6 +9,7 @@ import youtube from '../assests/projects_images/youtube clone.PNG'
 import google from '../assests/projects_images/google clone.PNG'
 import airbnb from '../assests/projects_images/airbnb clone.PNG'
 import hulu from '../assests/projects_images/hulu clone.PNG'
+import discord from '../assests/projects_images/discord clone.png'
 const data_projects = [
     {
         name: 'COVID 19 tracker',
@@ -98,9 +99,14 @@ const data_projects = [
         category: ['react'],
         description: 'React JS, Material UI, TMDb API, Responsive'
     },
-
-
-
+    {
+        name: 'Discord Clone',
+        image: discord,
+        deployed_url: 'https://discord-clone-an-doan.netlify.app/',
+        github_url: 'https://github.com/thanhan34/discord-clone',
+        category: ['react', 'redux'],
+        description: 'React JS, Material UI, Redux, Responsive'
+    },
 ]
 
 export default data_projects;

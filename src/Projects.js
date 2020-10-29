@@ -14,6 +14,7 @@ function Projects() {
         const new_array = data_projects.filter(project => project.category.includes(name))
         setProjects(new_array)
         setActive(name)
+
     }
     const project_variants = {
         hidden: {
