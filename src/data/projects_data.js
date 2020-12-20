@@ -10,6 +10,7 @@ import google from '../assests/projects_images/google clone.PNG'
 import airbnb from '../assests/projects_images/airbnb clone.PNG'
 import hulu from '../assests/projects_images/hulu clone.PNG'
 import discord from '../assests/projects_images/discord clone.png'
+import linkedin from '../assests/projects_images/linkedin.png'
 const data_projects = [
     {
         name: 'COVID 19 tracker',
@@ -106,6 +107,14 @@ const data_projects = [
         github_url: 'https://github.com/thanhan34/discord-clone',
         category: ['react', 'redux'],
         description: 'React JS, Material UI, Redux, Responsive'
+    },
+    {
+        name: 'LinkedInLinkedIn Clone',
+        image: linkedin,
+        deployed_url: 'https://linkedin-andoan.netlify.app/',
+        github_url: 'https://github.com/thanhan34/linkedin-clone',
+        category: ['react', 'redux'],
+        description: 'React JS, Material UI, Redux, Firebase'
     },
 ]
 

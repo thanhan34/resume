@@ -36,7 +36,7 @@ function Projects() {
         >
             <div className="projects__navbar">
                 <div className={active === 'All' && 'projects__navbar-active'} onClick={() => {
-                    setProjects(projects)
+                    setProjects(data_projects)
                     setActive("All")
                 }}>All</div>
                 <div className={active === 'react' && 'projects__navbar-active'} onClick={() => handleFilterCategory('react')}>React</div>
